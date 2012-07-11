@@ -1,5 +1,8 @@
 // <<< HATS Multi-Control Sensor Package for Arduino MEGA-2560 >>>
 
+// Subsystem code is placed into tabs within the Arduino software
+// hatsControl.ino is the main page
+
 // Necessary Libraries ----------------------------------------------------------
 
 #include <OneWire.h>                         // temp lib

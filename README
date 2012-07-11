@@ -1,1 +1,6 @@
 HATS - High Altitude Turbine Survey
+
+2012 - Patrick McGarey
+
+Please note that all sketches are placed in TABS with the hatsControl.ino acting as the main sketch and loop operator.
+
