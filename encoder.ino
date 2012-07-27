@@ -9,14 +9,14 @@ void encoderPrint() {
   newLeft = motor1.read() / 140;
   newRight = motor2.read() / 140;
   if (newLeft != positionLeft || newRight != positionRight) {
-    Serial.print(",");
     Serial.print(newLeft);
-    Serial.print(",");
+    Serial.print(" ");
     Serial.print(newRight);
-//    Serial3.print(",");
+    Serial.print(" ");
 //    Serial3.print(newLeft);
-//    Serial3.print(",");
+//    Serial3.print(" ");
 //    Serial3.print(newRight);
+//    Serial3.print(" ");
     positionLeft = newLeft;
     positionRight = newRight; }
   }

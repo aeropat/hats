@@ -1,9 +1,9 @@
 void motorControl() {
   analogWrite(motorPin, runValue); //makes sure motor is stopped
-  if (Serial.available()>0){
+  if (Serial3.available()>0){
     String readString;
-    while (Serial.available()>0) {  //if there's an input via keyboard
-      keyboardInput = Serial.read();
+    while (Serial3.available()>0) {  //if there's an input via keyboard
+      keyboardInput = Serial3.read();
       readString += keyboardInput;
     }
     if (readString.length()>0){
@@ -17,7 +17,7 @@ void motorControl() {
 }
 // <Maps 100-199 entry (percent) to 0-255 analog value
 int convertPercent(int pVal){
-  int runVal = map(pVal, 0, 100, 0, 255);
+  int runVal = map(pVal, 0, 9, 0, 255);
   runVal = constrain(runVal, 0, 255);
   return runVal;  
 }
